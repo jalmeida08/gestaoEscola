@@ -29,7 +29,7 @@ public class AlunoController {
 	@PostMapping(value="/", consumes=MediaType.APPLICATION_JSON)
 	public Response salvar(@RequestBody Aluno aluno) {
 		repository.save(aluno);
-		URI uri = URI.create("professor/"+aluno.getId());
+		URI uri = URI.create("aluno/"+aluno.getId());
 		return Response.created(uri).build();
 	}
 	
