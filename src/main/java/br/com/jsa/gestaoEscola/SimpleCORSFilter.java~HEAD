@@ -1,4 +1,4 @@
-package br.com.jsa.gestaoEscola.model;
+package br.com.jsa.gestaoEscola;
 
 import java.io.IOException;
 
